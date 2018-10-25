@@ -1,0 +1,28 @@
+﻿
+@model  AspPartialView.Models.Product
+
+<table width="500" border="2" align="left">
+    <tr>
+        <td>
+           <img src='@Url.Content(Model.Photo)', width="300", height="300" />
+        </td>
+        <td>
+            <table border="2"  align="center" width="200">
+                <tr>
+                    <td>Product Id</td>
+                    <td>@Model.productId</td>
+                </tr>
+                <tr>
+                    <td>Product Name</td>
+                    <td>@Model.Name</td>
+                </tr>
+                <tr>
+                    <td>Product Price</td>
+                    <td>@Model.Price</td>
+                </tr>
+                
+            </table><br/><br/>
+            <button>Place Order</button>
+        </td>
+    </tr>
+</table>

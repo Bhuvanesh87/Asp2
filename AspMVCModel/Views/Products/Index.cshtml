@@ -1,0 +1,24 @@
+﻿
+@model  IEnumerable<AspModel1.Models.Product>
+
+
+<h2>List of Products</h2>
+<table width="400" border="2">
+    <th>Product Id</th>
+    <th>Name</th>
+    <th>Price</th>
+    <th>View Details</th>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ProductId</td>
+            <td>@item.Name</td>
+            <td>@item.Price</td>
+            <td>@Html.ActionLink("Details", "Details", new { id=item.ProductId }) </td>
+        </tr>
+    }
+
+
+</table>
+
+

@@ -1,0 +1,10 @@
+﻿
+@model  List<AspPartialView.Models.Product>
+
+<h2 align="center"> Product Catalog</h2>
+
+@foreach(var item in Model)
+{
+     @Html.Partial("ProtoType",item)
+}
+
